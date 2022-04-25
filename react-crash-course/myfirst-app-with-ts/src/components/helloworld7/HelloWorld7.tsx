@@ -10,8 +10,7 @@ const HelloWorld7: React.FC<Props> = (props) => {
  const [user, setUser] = useState(null);
  let userIdInput: any = useRef(); //any is used here to accommodate possible undefined.
 
- //to be called when refetch is required. User id is read from input with ref attribute name
-userIdInput
+ //to be called when refetch is required. User id is read from input with ref attribute name userIdInput
  const refetchData = async () =>{
  try {
  let response = await fetch(`https://jsonplaceholder.typicode.com/users/$
