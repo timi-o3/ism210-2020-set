@@ -11,7 +11,6 @@ const App = () => {
   <div>
     <HelloWorld />
     <HelloWorld2 name="Pius"/>
-    <HelloWorld2 />
     <HelloWorld3 name="Joy"/>
     <HelloWorld4 />
     <HelloWorld5 />
