@@ -60,9 +60,10 @@ const Component5ShowUser: React.FC<Props> = (props)  => {
             {showUser()}
         </View>
     )
+}
 
 Component5ShowUser.defaultProps = {
 user: undefined
 }
-}
+
 export default Component5ShowUser;

@@ -1,7 +1,3 @@
-/**Similar to Component5 but involves indicating remote user data to load
- * useRef is not working here, so we use regular variable.
- */
- 
  import React, {useState, useEffect} from 'react';
  import Component5ShowUser from './Components5ShowUser';
  import { View, Text, TextInput, Button } from 'react-native';

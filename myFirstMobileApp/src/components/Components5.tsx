@@ -1,7 +1,7 @@
  /** Here we illustrate useEffect and fetching remote data */
  import React, {useState, useEffect} from 'react';
  import { View, Text } from 'react-native';
-import Component5ShowUser from './components5ShowUser';
+import Component5ShowUser from './Components5ShowUser';
  
  type User = {
     id: number,

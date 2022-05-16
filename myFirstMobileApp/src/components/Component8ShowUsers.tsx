@@ -24,37 +24,41 @@ type User = {
  }
 }
 type Props = {
- users: User | any
+ users?: User[] | any //array of users
 }
-const Component8ShowUsers: React.FC<Props> = (props) => {
+const Component8ShowUser: React.FC<Props> = (props) => {
     const showUser = () => {
-      const user: User = props.users;
-      try {
-        if (user.id !== undefined) {
-          return (
-            <View>
-              <Text>User data fetched from remote source:</Text>
-              <Text>id: {user.id}</Text>
-              <Text>name: {user.name}</Text>
-              <Text>username: {user.username}</Text>
-              <Text>email: {user.email}</Text>
-              <Text>street address: {user.address.street}</Text>
-              <Text>phone: {user.phone}</Text>
-              <Text>website: {user.website}</Text>
-              <Text>company name: {user.company.name}</Text>
-            </View>
-          );
-        } else {
-          return <Text>No user to display</Text>; //user is null or elements are undefined
+        const user: User = props.users;
+        try {
+            if (user.id !== undefined) {
+                return (
+                    <View>
+                        <Text>User data fetched from remote source:</Text>
+                        <Text>id: {user.id}</Text>
+                        <Text>name: {user.name}</Text>
+                        <Text>username: {user.username}</Text>
+                        <Text>email: {user.email}</Text>
+                        <Text>street address: {user.address.street}</Text>
+                        <Text>phone: {user.phone}</Text>
+                        <Text>website: {user.website}</Text>
+                        <Text>company name: {user.company.name}</Text>
+                    </View>
+                )
+            } else {
+                return <Text>No user to display</Text>; //user is null or elements are undefined
+            }
+        } catch (error: any) {
+            return <Text>Problem displaying user: ${error.message}</Text>;
         }
-      } catch (error) {
-        return <Text>Problem displaying user: ${error}</Text>;
-      }
-    };
-  
-    return <View>{showUser()}</View>;
-  };
-  Component8ShowUsers.defaultProps = {
-    users: undefined,
-  };
-  export default Component8ShowUsers;
+    }
+
+    return (
+        <View>
+            {showUser()}
+        </View>
+    )
+}
+Component8ShowUser.defaultProps = {
+    users: undefined
+}
+export default Component8ShowUser;
