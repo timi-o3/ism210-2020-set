@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "expo-sqlite": "^10.2.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.6"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-typescript-metadata": "^0.3.2"
+  }
+}
