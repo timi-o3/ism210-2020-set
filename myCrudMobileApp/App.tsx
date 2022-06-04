@@ -11,7 +11,7 @@ const App:React.FC = () => {
   //Bring the custom hook we wrote into this Component for use. To be explained in class
   const sqliteDataSource = useSqliteDataSource();
   //We need to hold the dataSource once opened, so we can pass it to components for connection.
-  const [dataSource, setDataSource] = useState<DataSource | null>(null)
+  const [dataSource, setDataSource] = useState<DataSource | null>(null)  
   //declare the function that we will use to get data source from the hook
   const getDataSource = async () => {
     try {

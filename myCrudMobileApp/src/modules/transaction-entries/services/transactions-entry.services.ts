@@ -1,6 +1,6 @@
 import React from "react";
 import { DataSource, Repository } from "typeorm";
-import { TransactionEntry } from "../entities/transaction-entry.entity";
+import { TransactionEntry } from "../entities/transaction-entity.entity";
 import { EntriesInDateSections, ITransactionEntry } from "../types/definitions";
 
 //prepare the function that will getTransactionEntries
