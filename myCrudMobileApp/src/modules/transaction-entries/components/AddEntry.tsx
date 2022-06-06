@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
 import { Button, Input, Text, CheckBox } from '@rneui/base';
-import DateTimePicker from '@react-native-community/datetimepicker'; //installation required
+import DateTimePicker from '@react-native-community/datetimepicker';
+//installation required
 
 /**
  * Type for props to be passed by Parent Component when mounting AddEntry
